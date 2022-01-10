@@ -2,9 +2,13 @@
 .gridf-c {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    padding: 10px;
+    grid-template-rows: 1px;
+    padding: 50px;
     font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
 }
+
+
 
 #b1_1 {
 
@@ -26,13 +30,15 @@
   .tit1 {
       background-color: white;
       border: none;
-      color: aquamarine;
+      color: rgb(51, 15, 211);
       cursor: pointer;
+      text-align: center;
+      font-size: 20px;
   }
 
 .button {
-    background-color: #4CAF50;
-    border-radius: 12px;
+    background-color: #5011e2;
+    border-radius: 50px;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -44,6 +50,7 @@
 
   #hl {
       text-align: center;
+      font-family: 'Open Sans', sans-serif;
   }
   #hig1 {
       font-size: 70px;
@@ -55,41 +62,68 @@
   }
   .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     background-color:white;
-    padding: 10px;
+    padding: 50px;
+    font-family: 'Open Sans', sans-serif;
   }
-  .grid-item {
+  .grid-item-1 {
     background-color: rgba(255, 255, 255, 0.8);
-   
-    padding: 20px;
+    grid-column-start: 1,1;
     font-size: 30px;
     text-align: center;
   }
+  .grid-item-2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    grid-column-start: 2,-1;
+    font-size: 30px;
+
+    object-fit: fill;
+  }
+
+  .grid-item-3 {
+    background-color: rgba(255, 255, 255, 0.8);
+    grid-column-start: 1,1;
+    font-size: 30px;
+    text-align: center;
+  }
+
+
   #intro {
       font-size: 55px;
-      padding: 10px;
+      padding: 50px;
       font-weight: 700;
+      font-family: 'Open Sans', sans-serif;
   }
 
   #intro-inner {
       font-size: 40px;
-      padding: 10px;
+      padding: 50px;
       font-weight: lighter;
+      font-family: 'Open Sans', sans-serif;
   }
 
   .grid2-c{
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 2fr);
       grid-template-rows: 200px:
       background-color: white;
-      padding: 10px;
+      padding: 50px;
+      font-family: 'Open Sans', sans-serif;
   }
-  .grid2-i {
+  .grid2-i-1 {
       background-color: white;
       padding: 20px;
       font-size: large;
+  }
+
+  .grid2-i {
+    background-color: white;
+    padding: 20px;
+    font-size: large;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
   }
   #h1-1 {
       font-size: 700;
@@ -99,6 +133,9 @@
   .button2 {
       font-size: larger;
       background-color: white;
+      border-color: blueviolet;
+      color: blueviolet;
+      padding: 10px 20px;
   }
 #sp3 {
    font-size: 70px;
@@ -111,16 +148,36 @@
 }
 #sp5 {
     text-decoration-line: underline;
-  text-decoration-style: wavy;
+  text-decoration-style:solid;
+  text-decoration-thickness: 20 ;
   text-decoration-color: aqua;
   color: blue;
 }
+
+#st1{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: lighter;
+}
+
+#icon1.fa-check-circle{
+    color: gray;
+}
+
+#icon2.fa-check-circle{
+    color: rgb(219, 233, 29);
+}
+
+#icon3.fa-check-circle{
+    color: rgb(62, 230, 137);
+}
+
 .grid3-c {
     display: grid;
       grid-template-columns: repeat(3, 1fr);
       background-color: white;
-      padding: 10px;
-
+      padding-left: 50px;
+      padding-right: 50px;
+      font-family: 'Open Sans', sans-serif;
       grid-column-gap: 50px;
 }
 .grid3-i {
@@ -128,8 +185,18 @@
     padding: 20px;
     font-size: large;   
     font-size: 30px;
+    line-height: 50px;
 
 }
+
+#button3 {
+    color:  rgb(175, 7, 253); 
+    border-radius:20px; 
+    cursor: pointer;
+    width: 402px;
+    height: 64px;
+}
+
 #grid {
     font-size: 50px;
     font-weight: 800;
@@ -138,7 +205,9 @@
 .grid4-c {
     display: grid;
     grid-template-columns: 1fr 1fr  1fr 2fr;
-    padding: 10px;
+
+    font-family: 'Open Sans', sans-serif;
+    padding: 50px;
 }
 .grid4-1-i {
     grid-column-start: 1;
@@ -159,5 +228,32 @@
 }
 
 .grid4-i-3 {
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    background-color: rgb(216, 211, 211);
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+}
+
+#input1 {
+    border: none;
+    background-color:rgb(216, 211, 211) ;
+    color:rgb(39, 39, 204);
+    border-radius: 5px;
+    width: 400px;
+    height: 60px;
+}
+
+#b4 {
+    border-radius:5px ;
+    background-color: rgb(39, 39, 204);
+    border: none;
+    width: 105px;
+    height: 60px;
+    color: white;
     cursor: pointer;
 }
