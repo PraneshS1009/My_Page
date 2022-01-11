@@ -6,9 +6,12 @@
     padding: 50px;
     font-size: 40px;
     font-family: 'Open Sans', sans-serif;
+    text-align: justify;
 }
 
-
+.gridf-i-1 {
+    font-size: 70px;
+}
 
 #b1_1 {
 
@@ -32,7 +35,7 @@
       border: none;
       color: rgb(51, 15, 211);
       cursor: pointer;
-      text-align: center;
+      text-align:justify;
       font-size: 20px;
   }
 
@@ -62,32 +65,19 @@
   }
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
     background-color:white;
     padding: 50px;
+    grid-gap: 25px;
     font-family: 'Open Sans', sans-serif;
   }
-  .grid-item-1 {
-    background-color: rgba(255, 255, 255, 0.8);
-    grid-column-start: 1,1;
-    font-size: 30px;
-    text-align: center;
-  }
-  .grid-item-2 {
-    background-color: rgba(255, 255, 255, 0.8);
-    grid-column-start: 2,-1;
-    font-size: 30px;
 
-    object-fit: fill;
-  }
+ #p1 {
+     text-align: justify;
+     font-family: 'Open Sans', sans-serif;
 
-  .grid-item-3 {
-    background-color: rgba(255, 255, 255, 0.8);
-    grid-column-start: 1,1;
-    font-size: 30px;
-    text-align: center;
-  }
+ }
+
 
 
   #intro {
@@ -99,6 +89,7 @@
 
   #intro-inner {
       font-size: 40px;
+      margin-top: 1px;
       padding: 50px;
       font-weight: lighter;
       font-family: 'Open Sans', sans-serif;
@@ -107,10 +98,10 @@
   .grid2-c{
       display: grid;
       grid-template-columns: repeat(4, 2fr);
-      grid-template-rows: 200px:
       background-color: white;
       padding: 50px;
       font-family: 'Open Sans', sans-serif;
+      margin-top: 1px;
   }
   .grid2-i-1 {
       background-color: white;
@@ -208,6 +199,9 @@
 
     font-family: 'Open Sans', sans-serif;
     padding: 50px;
+    background-image: url('wave.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .grid4-1-i {
     grid-column-start: 1;
@@ -257,3 +251,5 @@ input {
     color: white;
     cursor: pointer;
 }
+
+    
